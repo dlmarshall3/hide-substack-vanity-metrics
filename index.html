@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css">
+    <title>Hide Those Vanity Metrics</title>
+  </head>
+  <body>
+    <h1>Hide Those Vanity Metrics</h1>
+    <div class="row">
+      <h3>Hide:</h3>
+      <div class="col">
+        <h4>Posts:</h4>
+        <ul>
+          <li>All posts <button class="btn btn-primary" id="allPosts" onclick="toggle('allPosts')">Toggle</li>
+          <li>Post likes <button class="btn btn-primary" id="postLikes" onclick="toggle('postLikes')">Toggle</li>
+          <li>Post views <button class="btn btn-primary" id="postViews" onclick="toggle('postViews')">Toggle</li>
+          <li>Post recipient/open rates <button class="btn btn-primary" id="postOpenRates" onclick="toggle('postOpenRates')">Toggle</li>
+          <li>Post link clicks <button class="btn btn-primary" id="postLinkClicks" onclick="toggle('postLinkClicks')">Toggle</li>
+          <li>Traffic sources <button class="btn btn-primary" id="trafficSources" onclick="toggle('trafficSources')">Toggle</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>Tabs:</h4>
+        <ul>
+          <li>Subscribers <button class="btn btn-primary" id="subscribersTab" onclick="toggle('subscribersTab')">Toggle</li>
+          <li>Stats <button class="btn btn-primary" id="statsTab" onclick="toggle('statsTab')">Toggle</li>
+        </ul>
+      </div>
+    </div>
+    <span class="published">allposts</span>
+    <span class="like-button-container">postlikes</span>
+    <span class="post-stats big">postviews</span>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  </body>
+</html>
